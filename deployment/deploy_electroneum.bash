@@ -46,7 +46,7 @@ sudo openssl req -subj "/C=IT/ST=Pool/L=Daemon/O=Mining Pool/CN=mining.pool" -ne
 mkdir ~/pool_db/
 sed -r "s/(\"db_storage_path\": ).*/\1\"\/home\/$CURUSER\/pool_db\/\",/" config_example.json > config.json
 cd ~
-sudo git clone https://github.com/miziel/poolui.git
+sudo git clone https://github.com/arqtras/poolui.git
 cd poolui
 sudo chown -R $USER ~/poolui
 npm install
