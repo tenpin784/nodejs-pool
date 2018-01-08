@@ -240,16 +240,11 @@ Installation/Configuration Assistance
 =====================================
 If you need help installing the pool from scratch, please have your servers ready, which would be Ubuntu 16.04 servers, blank and clean, DNS records pointed.  These need to be x86_64 boxes with AES-NI Available.
 
-Installation asstiance is 7 XMR, with a 3 XMR deposit, with remainder to be paid on completion.  
-Configuration assistance is 4 XMR with a 2 XMR deposit, and includes debugging your pool configurations, ensuring that everything is running, and tuning for your uses/needs.  
-
 SSH access with a sudo-enabled user will be needed, preferably the user that is slated to run the pool.
-
-If you'd like assistance with setting up node-cryptonote-pool, please provide what branch/repo you'd like to work from, as there's a variety of these.
 
 Assistance is not available for frontend customization at this time.
 
-For assitance, please contact Snipa at pool_install@snipanet.com or via IRC at irc.freenode.net in the #monero-pools channel.
+For assitance, please contact ArqTras at support@supportaeon.com
 
 Developer Donations
 ===================
