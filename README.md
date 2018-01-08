@@ -252,6 +252,7 @@ If you'd like to make a one time donation, the addresses are as follows:
 * AEON WmtWzE4zej7FLjctgMPk7Va7hiiESJF5xHfmb5KZaMAhHDSRU51pqTJQiVFZgRMmrga9KvqPg48EZTEVQ9qA47o52MYgiMqaw
 * XMR 4AYuDc4cEqxfxVTUFwVqPd4JdmKLjm9dNhTjuT6Ud5gQa564wp6cxMBWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm3zc3jmn
 * ETN etnkLgWfr5uE8MZSZpsabb6HjG8Mig9qaS4wQ6Hu2VVKTiJT9Ucdrzz9CqGF9tycaWbntrSRr1CwVJDqGYPtumL72GhXwtoPvs
+
 Credits
 =======
 
