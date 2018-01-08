@@ -254,10 +254,9 @@ For assitance, please contact Snipa at pool_install@snipanet.com or via IRC at i
 Developer Donations
 ===================
 If you'd like to make a one time donation, the addresses are as follows:
-* XMR - 44Ldv5GQQhP7K7t3ZBdZjkPA7Kg7dhHwk3ZM3RJqxxrecENSFx27Vq14NAMAd2HBvwEPUVVvydPRLcC69JCZDHLT2X5a4gr
-* BTC - 114DGE2jmPb5CP2RGKZn6u6xtccHhZGFmM
-* AEON - WmtvM6SoYya4qzkoPB4wX7FACWcXyFPWAYzfz7CADECgKyBemAeb3dVb3QomHjRWwGS3VYzMJAnBXfUx5CfGLFZd1U7ssdXTu
-
+* AEON WmtWzE4zej7FLjctgMPk7Va7hiiESJF5xHfmb5KZaMAhHDSRU51pqTJQiVFZgRMmrga9KvqPg48EZTEVQ9qA47o52MYgiMqaw
+* XMR 4AYuDc4cEqxfxVTUFwVqPd4JdmKLjm9dNhTjuT6Ud5gQa564wp6cxMBWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm3zc3jmn
+* ETN etnkLgWfr5uE8MZSZpsabb6HjG8Mig9qaS4wQ6Hu2VVKTiJT9Ucdrzz9CqGF9tycaWbntrSRr1CwVJDqGYPtumL72GhXwtoPvs
 Credits
 =======
 
