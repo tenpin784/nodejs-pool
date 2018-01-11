@@ -1,0 +1,14 @@
+[Unit]
+Description=Aeon Daemon
+After=network.target
+
+[Service]
+Type=forking
+GuessMainPID=no
+ExecStart=/usr/local/src/aeon/build/release/src/aeond --rpc-bind-ip 127.0.0.1 --rpc-bind-port 11181 --detach
+ExecStop=/usr/local/src/aeon/build/release/src/aeond exit
+Restart=always
+User=aeondaemon
+
+[Install]
+WantedBy=multi-user.target
