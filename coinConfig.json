@@ -22,7 +22,7 @@
     "paymentFile": "./payment_systems/etn.js",
     "sigDigits": 1000000000000,
     "name": "Electroneum",
-    "mixIn": 4,
+    "mixIn": 0,
     "shortCode": "ETN"
   },
   "aeon": {
