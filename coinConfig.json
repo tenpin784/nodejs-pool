@@ -20,7 +20,7 @@
   "etn": {
     "funcFile": "./lib/coins/etn.js",
     "paymentFile": "./payment_systems/etn.js",
-    "sigDigits": 1000000000000,
+    "sigDigits": 100,
     "name": "Electroneum",
     "mixIn": 0,
     "shortCode": "ETN"
