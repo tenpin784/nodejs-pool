@@ -255,8 +255,8 @@ If you'd like to make a one time donation, the addresses are as follows:
 
 My pools:
 ================
-https://supportaeon.com
-https://supportent.eu
+* https://supportaeon.com
+* https://supportetn.eu
 
 Credits
 =======
