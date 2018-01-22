@@ -25,6 +25,14 @@
     "mixIn": 0,
     "shortCode": "ETN"
   },
+  "xlc": {
+    "funcFile": "./lib/coins/xlc.js",
+    "paymentFile": "./payment_systems/xlc.js",
+    "sigDigits": 100000000,
+    "name": "Leviarcoin",
+    "mixIn": 1,
+    "shortCode": "XLC"
+  },
   "aeon": {
     "funcFile": "./lib/coins/aeon.js",
     "paymentFile": "./payment_systems/aeon.js",

@@ -3,7 +3,7 @@
   "bind_ip": "0.0.0.0",
   "hostname": "testpool.com",
   "db_storage_path": "CHANGEME",
-  "coin": "etn",
+  "coin": "xlc",
   "mysql": {
     "connectionLimit": 20,
     "host": "127.0.0.1",
