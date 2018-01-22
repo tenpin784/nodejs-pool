@@ -10,13 +10,13 @@ ROOT_SQL_PASS=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 CURUSER=$(whoami)
 sudo timedatectl set-timezone Etc/UTC
 sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
+sudo apt-get -y upgrade
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $ROOT_SQL_PASS"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $ROOT_SQL_PASS"
 echo -e "[client]\nuser=root\npassword=$ROOT_SQL_PASS" | sudo tee /root/.my.cnf
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install git python-virtualenv python3-virtualenv curl ntp build-essential screen cmake pkg-config libboost-all-dev libevent-dev libunbound-dev libminiupnpc-dev libunwind8-dev liblzma-dev libldns-dev libexpat1-dev libgtest-dev mysql-server lmdb-utils libzmq3-dev
+sudo apt-get -y install git python-virtualenv python3-virtualenv curl ntp build-essential screen cmake pkg-config libboost-all-dev libevent-dev libunbound-dev libminiupnpc-dev libunwind8-dev liblzma-dev libldns-dev libexpat1-dev libgtest-dev mysql-server lmdb-utils libzmq3-dev
 cd ~
-sudo git clone https://github.com/arqtras/nodejs-pool.git  # Change this depending on how the deployment goes.
+sudo git clone https://github.com/tenpin784/nodejs-pool-xlc.git nodejs-pool  # Change this depending on how the deployment goes.
 cd /usr/src/gtest
 sudo cmake .
 sudo make
@@ -24,17 +24,16 @@ sudo mv libg* /usr/lib/
 cd ~
 sudo systemctl enable ntp
 cd /usr/local/src
-sudo git clone https://github.com/electroneum/electroneum.git
-cd electroneum
+sudo git clone https://github.com/leviarcoin/leviarcoin-src.git
+cd leviarcoin-src
 sudo git checkout
-sudo curl https://raw.githubusercontent.com/arqtras/nodejs-pool/master/deployment/electroneum_daemon.patch | sudo git apply -v
 sudo cmake .
 sudo make -j$(nproc)
-sudo cp ~/nodejs-pool/deployment/electroneum.service /lib/systemd/system/
-sudo useradd -m electroneumdaemon -d /home/electroneumdaemon
+sudo cp ~/nodejs-pool/deployment/leviardaemon.service /lib/systemd/system/
+sudo useradd -m leviardaemon -d /home/leviardaemon
 sudo systemctl daemon-reload
-sudo systemctl enable electroneum
-sudo systemctl start electroneum
+sudo systemctl enable leviardaemon
+sudo systemctl start leviardaemon
 sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 source ~/.nvm/nvm.sh
 nvm install v6.9.2
@@ -46,7 +45,7 @@ sudo openssl req -subj "/C=IT/ST=Pool/L=Daemon/O=Mining Pool/CN=mining.pool" -ne
 mkdir ~/pool_db/
 sed -r "s/(\"db_storage_path\": ).*/\1\"\/home\/$CURUSER\/pool_db\/\",/" config_example.json > config.json
 cd ~
-sudo git clone https://github.com/arqtras/poolui.git
+sudo git clone https://github.com/tenpin784/poolui-xlc.git poolui
 cd poolui
 sudo chown -R $USER ~/poolui
 npm install

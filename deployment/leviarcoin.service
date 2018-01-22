@@ -1,14 +1,14 @@
 [Unit]
-Description=Electroneum Daemon
+Description=Leviarcoin Daemon
 After=network.target
 
 [Service]
 Type=forking
 GuessMainPID=no
-ExecStart=/usr/local/src/electroneum/bin/electroneumd --rpc-bind-ip 127.0.0.1 --rpc-bind-port 26968 --detach
+ExecStart=/usr/local/src/electroneum/bin/electroneumd --rpc-bind-ip 127.0.0.1 --rpc-bind-port 19001 --detach
 ExecStop=/usr/local/src/electroneum/bin/electroneumd exit
 Restart=always
-User=electroneumdaemon
+User=leviardaemon
 
 [Install]
 WantedBy=multi-user.target
