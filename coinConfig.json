@@ -28,7 +28,7 @@
   "xlc": {
     "funcFile": "./lib/coins/xlc.js",
     "paymentFile": "./payment_systems/xlc.js",
-    "sigDigits": 10000,
+    "sigDigits": 100000000,
     "name": "Leviarcoin",
     "mixIn": 1,
     "shortCode": "XLC"
