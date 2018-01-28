@@ -29,7 +29,7 @@ cd leviarcoin-src
 sudo git checkout
 sudo cmake .
 sudo make -j$(nproc)
-sudo cp ~/nodejs-pool/deployment/leviardaemon.service /lib/systemd/system/
+sudo cp ~/nodejs-pool/deployment/leviarcoin.service /lib/systemd/system/
 sudo useradd -m leviardaemon -d /home/leviardaemon
 sudo systemctl daemon-reload
 sudo systemctl enable leviardaemon
