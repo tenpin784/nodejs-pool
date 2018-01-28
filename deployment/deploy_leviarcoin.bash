@@ -30,10 +30,10 @@ sudo git checkout
 sudo cmake .
 sudo make -j$(nproc)
 sudo cp ~/nodejs-pool/deployment/leviarcoin.service /lib/systemd/system/
-sudo useradd -m leviardaemon -d /home/leviardaemon
+sudo sed -i "s/User=leviarcoin/User=`echo $USER`/g" /lib/systemd/system/leviarcoin.service
 sudo systemctl daemon-reload
-sudo systemctl enable leviardaemon
-sudo systemctl start leviardaemon
+sudo systemctl enable leviarcoin
+sudo systemctl start leviarcoin
 sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 source ~/.nvm/nvm.sh
 nvm install v6.9.2

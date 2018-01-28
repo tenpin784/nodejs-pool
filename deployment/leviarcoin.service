@@ -5,10 +5,10 @@ After=network.target
 [Service]
 Type=forking
 GuessMainPID=no
-ExecStart=/usr/local/src/leviarcoin-src/src/leviarcoind --rpc-bind-ip 127.0.0.1 --rpc-bind-port 19001 --detach
+ExecStart=/usr/bin/screen -d -m /usr/local/src/leviarcoin-src/src/leviarcoind --rpc-bind-ip 127.0.0.1 --rpc-bind-port 19001
 ExecStop=/usr/local/src/leviarcoin-src/src/leviarcoind exit
 Restart=always
-User=leviardaemon
+User=leviarcoin
 
 [Install]
 WantedBy=multi-user.target
